@@ -10,22 +10,21 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_category")
 public class Category {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
-	
+
 	@ManyToMany(mappedBy = "categories")
 	private Set<Product> products = new HashSet<>();
-	
+
 	public Category() {
-		
+
 	}
 
 	public Category(Long id, String name) {
@@ -53,6 +52,5 @@ public class Category {
 	public Set<Product> getProducts() {
 		return products;
 	}
-	
 
 }

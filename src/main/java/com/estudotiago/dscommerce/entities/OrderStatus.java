@@ -1,12 +1,7 @@
 package com.estudotiago.dscommerce.entities;
 
 public enum OrderStatus {
-	
-        WAITING_PAYMENT,
-        PAID,
-        SHIPPED,
-        DELIVERED, 
-        CANCELED;
-        
+
+	WAITING_PAYMENT, PAID, SHIPPED, DELIVERED, CANCELED;
 
 }
