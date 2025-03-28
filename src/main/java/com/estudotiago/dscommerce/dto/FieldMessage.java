@@ -1,0 +1,21 @@
+package com.estudotiago.dscommerce.dto;
+
+public class FieldMessage {
+	
+	private String name;
+	private String message;
+	public FieldMessage(String name, String message) {
+		super();
+		this.name = name;
+		this.message = message;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getMessage() {
+		return message;
+	}
+	
+	
+
+}
